@@ -1,6 +1,8 @@
 # cubx-grunt-wct-scaffolder
 
 Grunt integration for generate the scaffold of wct unit tests for cubbles components. This is a wrapper for the cubx-wct-scaffolder package.
+This grunt plugin was developed for usage in cubbles projects in cubbles-coder-devtools.
+
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -17,8 +19,20 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('cubx-grunt-wct-scaffolder');
 
 ## Usage
-This grunt plugin is created for usage in cubbles-coder-devtools. 
+This grunt plugin is created for usage in cubbles-coder-devtools.
 
+### Configuration
 
+    ..
+    '_generateArtifactWctTScaffold': [
+      all: {
+        options: {
+          webpackagePath: <webpacakgePath>
+        }
+      }
+    }
 
-```
+In cubbles-coder-devtools is the configruation not necessary, because the default value of webapckagePath is the config paramater `param.src`, wich is the path to the active webpacakge.
+
+[npm-image]: https://img.shields.io/npm/v/cubx-grunt-wct-scaffolder.svg?style=flat
+[npm-url]: https://npmjs.org/package/cubx-grunt-wct-scaffolder

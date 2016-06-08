@@ -3,13 +3,12 @@
 var scaffolder = require('cubx-wct-scaffolder');
 module.exports = function (grunt) {
   grunt.registerTask('_generateArtifactWctScaffold', 'Generate a wct scaffold for an Artifact.', function () {
-    grunt.verbose.writeln('options' + this.data.toString());
-    var options = this.data;
+    var option = grunt.option('webpackagPath');
     var webpackagePath;
-    if (!options || !options.webpackagePath) {
+    if (!option) {
       webpackagePath = grunt.config.get('param.src');
     } else {
-      webpackagePath = options.webpackagePath;
+      webpackagePath = option;
     }
     if (!webpackagePath) {
       throw new Error('webpackagePath missed. Please defined the option webpackagePath.');
