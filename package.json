@@ -1,0 +1,37 @@
+{
+  "name": "cubx-grunt-wct-scaffolder",
+  "version": "0.1.0",
+  "description": "Grunt plugin for generate of wct tests for cubbles component.",
+  "scripts": {
+    "prepublish": "npm run lint",
+    "lint": "eslint lib task *.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cubbles/cubx-grunt-wct-test-scaffolder.git"
+  },
+  "keywords": [
+    "cubbles",
+    "cubx",
+    "scaffold",
+    "wct",
+    "web-component-tester",
+    "grunt"
+  ],
+  "author": "Judit Ross <judit.ross@incowia.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cubbles/cubx-grunt-grunt-wct-scaffolder/issues"
+  },
+  "homepage": "https://github.com/cubbles/cubx-grunt-wct-scaffolder#readme",
+  "dependencies": {
+    "cubx-wct-scaffolder": "^0.2.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "load-grunt-configs": "^1.0.0",
+    "load-grunt-tasks": "^3.5.0"
+  },
+  "devDependencies": {
+  }
+}
