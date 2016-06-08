@@ -1,6 +1,6 @@
 {
   "name": "cubx-grunt-wct-scaffolder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Grunt plugin for generate of wct tests for cubbles component.",
   "scripts": {
     "prepublish": "npm run lint",
@@ -32,6 +32,5 @@
     "load-grunt-configs": "^1.0.0",
     "load-grunt-tasks": "^3.5.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
