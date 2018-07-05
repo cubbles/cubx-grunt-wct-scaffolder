@@ -33,7 +33,7 @@ module.exports = function (grunt) {
   }
 
   grunt.initConfig(webpackageRelatedOptions);
-// Actually load this plugin's task(s).
+  // Actually load this plugin's task(s).
 
   var configs = require('load-grunt-configs')(grunt, webpackageRelatedOptions);
   grunt.initConfig(configs);
