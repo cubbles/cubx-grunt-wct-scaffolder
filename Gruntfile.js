@@ -6,16 +6,16 @@
  */
 
 'use strict';
-var path = require('path');
+const path = require('path');
 
 module.exports = function (grunt) {
   grunt.loadTasks('tasks'); // locally defined tasks
 
   // Project configuration.
-  var workspacePath = path.join('test', 'webpackages');
-  var workspaceConfigPath = path.join(workspacePath, '.workspace');
-  var activeWebpackage = grunt.file.readJSON(workspaceConfigPath).activeWebpackage;
-  var webpackageRelatedOptions;
+  const workspacePath = path.join('test', 'webpackages');
+  const workspaceConfigPath = path.join(workspacePath, '.workspace');
+  const activeWebpackage = grunt.file.readJSON(workspaceConfigPath).activeWebpackage;
+  let webpackageRelatedOptions;
 
   if (activeWebpackage && activeWebpackage.length > 0) {
     // Webpackage related grunt options
@@ -33,8 +33,8 @@ module.exports = function (grunt) {
   }
 
   grunt.initConfig(webpackageRelatedOptions);
-// Actually load this plugin's task(s).
+  // Actually load this plugin's task(s).
 
-  var configs = require('load-grunt-configs')(grunt, webpackageRelatedOptions);
+  const configs = require('load-grunt-configs')(grunt, webpackageRelatedOptions);
   grunt.initConfig(configs);
 };
