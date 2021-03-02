@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/cubbles/cubx-grunt-wct-scaffolder#readme",
   "dependencies": {
-    "cubx-wct-scaffolder": "^3.2.1",
+    "cubx-wct-scaffolder": "^3.2.2",
     "grunt-contrib-clean": "^2.0.0",
     "lodash": "^4.17.21",
     "tv4": "^1.3.0"
